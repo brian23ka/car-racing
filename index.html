@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car racing game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvc99ZgUNuf7poWdf91HGlV6-X3Vsxjnoi4A&s" type="image/x-icon">
+ </head>
+<body>
+    <h1>Car Racing Game</h1>
+    <!-- music section  -->
+     <button id="musicToggle" onclick="toggleMusic()">Play Music</button>
+    <!-- welcome section  -->
+     <div id="welcomeScreen">
+        <h2>welcome to Car Racing Game</h2>
+        <p>Avoid Obstacles and Enjoy </p>
+        <button id="startButton" onclick="startGame()">Start Game</button>
+        </div>
+    <!-- game section  -->
+     <canvas id="gameCanvas"></canvas>
+    <!-- game over section  -->
+     <div id="gameOverScreen">
+        <h2>Game Over</h2>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <button id="restartButton" onclick="startGame()">Restart Game</button>
+        </div>
+        <script src="script.js"></script>
+    
+</body>
+ </html>
